@@ -1,0 +1,29 @@
+.footer {
+  padding-block: var(--space-6) calc(var(--space-6) + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid var(--line);
+  color: var(--text-faint);
+  font-size: var(--fs-sm);
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3) var(--space-6);
+}
+
+.meta a {
+  color: var(--text-muted);
+}
+
+.top {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-left: auto;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.top:hover {
+  color: var(--accent);
+}

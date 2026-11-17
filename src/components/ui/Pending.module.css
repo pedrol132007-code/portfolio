@@ -1,0 +1,15 @@
+.pending {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35em;
+  padding: 0.3em 0.7em;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.4;
+}
+.label {
+  color: var(--accent);
+  font-weight: 600;
+}

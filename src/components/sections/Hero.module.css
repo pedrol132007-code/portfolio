@@ -1,0 +1,135 @@
+.hero {
+  padding-top: calc(var(--header-h) + env(safe-area-inset-top, 0px));
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: min(100svh - var(--header-h), 58rem);
+  padding-block: var(--space-7) var(--space-7);
+}
+
+/* O nome é o elemento marcante: a fonte variável "se constrói" ao carregar, de larga e fina para estreita e firme. */
+.name {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fs-display);
+  line-height: 0.84;
+  font-weight: 720;
+  font-stretch: 75%;
+  letter-spacing: -0.012em;
+  font-variation-settings: 'opsz' 96;
+}
+
+.line {
+  display: block;
+  animation: build 1300ms var(--ease-out) both;
+}
+
+.lineTwo {
+  align-self: flex-end;
+  animation-delay: 140ms;
+}
+
+@keyframes build {
+  from {
+    font-stretch: 100%;
+    font-weight: 250;
+    letter-spacing: 0.01em;
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  to {
+    font-stretch: 75%;
+    font-weight: 720;
+    letter-spacing: -0.012em;
+    opacity: 1;
+  }
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-5);
+  margin-top: var(--space-7);
+  animation: settle 900ms var(--ease-out) 700ms both;
+}
+
+.tagline {
+  max-width: 16ch;
+  font-size: var(--fs-xl);
+  font-weight: 560;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-variation-settings: 'opsz' 48;
+}
+
+.intro {
+  max-width: 44ch;
+  color: var(--text-muted);
+  font-size: var(--fs-md);
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+.now {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--line);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+  animation: settle 900ms var(--ease-out) 900ms both;
+}
+
+.dot {
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: translateY(-0.05em);
+}
+
+@keyframes settle {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (min-width: 52rem) {
+  .grid {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: var(--space-8);
+    align-items: start;
+  }
+}
+
+@media (max-width: 40rem) {
+  .inner {
+    min-height: auto;
+    padding-top: var(--space-8);
+  }
+  .lineTwo {
+    align-self: flex-start;
+    padding-left: 0.5em;
+  }
+  .now {
+    margin-top: var(--space-7);
+  }
+}

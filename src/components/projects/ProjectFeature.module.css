@@ -1,0 +1,121 @@
+.feature {
+  display: grid;
+  gap: var(--space-6);
+  scroll-margin-top: calc(var(--header-h) + var(--space-6));
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--text);
+}
+.status::before {
+  content: '';
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.name {
+  margin-top: var(--space-3);
+  font-size: clamp(3rem, 1.8rem + 5vw, 6rem);
+  font-weight: 700;
+  font-stretch: 78%;
+  letter-spacing: -0.012em;
+  line-height: 0.95;
+  font-variation-settings: 'opsz' 96;
+}
+
+.summary {
+  margin-top: var(--space-4);
+  max-width: 40ch;
+  font-size: var(--fs-md);
+  line-height: 1.45;
+}
+
+.copy {
+  display: grid;
+  gap: var(--space-5);
+  align-content: start;
+}
+
+.block p {
+  max-width: 58ch;
+  color: var(--text-muted);
+}
+
+.label {
+  margin-bottom: var(--space-2);
+  color: var(--text);
+  font-size: var(--fs-sm);
+  font-weight: 620;
+  letter-spacing: 0;
+}
+
+.highlights {
+  display: grid;
+  gap: var(--space-3);
+  color: var(--text-muted);
+}
+.highlights li {
+  position: relative;
+  padding-left: 1.1rem;
+}
+.highlights li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 0.5rem;
+  height: 1px;
+  background: var(--accent);
+}
+
+.visual {
+  min-width: 0;
+}
+
+@media (min-width: 62rem) {
+  .feature {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    grid-template-areas:
+      'head head'
+      'copy visual';
+    column-gap: var(--space-8);
+    row-gap: var(--space-7);
+  }
+  .head {
+    grid-area: head;
+  }
+  .copy {
+    grid-area: copy;
+  }
+  .visual {
+    grid-area: visual;
+  }
+  .flip {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    grid-template-areas:
+      'head head'
+      'visual copy';
+  }
+  .flip .head {
+    text-align: right;
+  }
+  .flip .meta {
+    justify-content: flex-end;
+  }
+  .flip .summary {
+    margin-left: auto;
+  }
+}

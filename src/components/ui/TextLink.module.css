@@ -1,0 +1,65 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  min-height: 2.75rem;
+  padding: 0.55em 1.05em;
+  border-radius: 999px;
+  font-size: var(--fs-sm);
+  font-weight: 560;
+  line-height: 1.2;
+  text-decoration: none;
+  transition:
+    background-color var(--dur-fast) ease,
+    border-color var(--dur-fast) ease,
+    color var(--dur-fast) ease,
+    transform var(--dur-fast) var(--ease-out);
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.primary:hover {
+  background: var(--accent-strong);
+}
+
+.quiet {
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+}
+.quiet:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.plain {
+  padding-inline: 0;
+  color: var(--text);
+  border-radius: 4px;
+}
+.plain span {
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 0.25em;
+  transition: text-decoration-color var(--dur-fast) ease;
+}
+.plain:hover span {
+  text-decoration-color: var(--accent);
+}
+
+.out {
+  color: var(--text-faint);
+  transition: transform var(--dur-fast) var(--ease-out), color var(--dur-fast) ease;
+}
+.primary .out {
+  color: inherit;
+}
+.link:hover .out {
+  transform: translate(2px, -2px);
+  color: currentColor;
+}
+
+.link:active {
+  transform: translateY(1px);
+}

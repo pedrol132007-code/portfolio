@@ -1,0 +1,16 @@
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3) var(--space-4);
+  margin-top: var(--space-2);
+}
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.note {
+  color: var(--text-faint);
+  font-size: var(--fs-sm);
+}
