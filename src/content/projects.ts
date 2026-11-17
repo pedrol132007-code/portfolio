@@ -62,16 +62,20 @@ export const projects: Project[] = [
     },
     highlights: [
       {
-        pt: 'Um agente de investimentos com IA (via Groq) lê a carteira e dados de mercado, sugere onde aportar e sempre mostra os números que usou.',
-        en: 'An AI investment agent (via Groq) reads the portfolio and market data, suggests where to invest and always shows the numbers it used.',
+        pt: 'Na versão 2.0, uma aba Agente: uma IA (via Groq) que olha a carteira e o mercado (Fundamentus, Yahoo Finanças, B3 e boletim Focus), sugere onde aportar e o que considerar vender, sempre mostrando os números que usou.',
+        en: 'Version 2.0 adds an Agent tab: an AI (via Groq) that looks at the portfolio and the market (Fundamentus, Yahoo Finance, B3 and the Focus report), suggests where to invest and what to consider selling, always showing the numbers it used.',
+      },
+      {
+        pt: '“Vou aportar…” vira um plano em cotas inteiras, com um botão Comprar em cada linha. Valores em reais e quantidades não saem do aparelho: o agente recebe só percentuais.',
+        en: '“I’m investing…” turns into a plan in whole shares, with a Buy button on each line. Amounts and quantities never leave the device: the agent only gets percentages.',
       },
       {
         pt: 'Sincronização entre aparelhos com a carteira cifrada no próprio aparelho (AES-GCM) antes de ir para a nuvem.',
         en: 'Sync across devices, with the portfolio encrypted on the device (AES-GCM) before it reaches the cloud.',
       },
       {
-        pt: 'Importa os extratos da B3 sem enviar a planilha a lugar nenhum e compara o resultado com o CDI e o Ibovespa.',
-        en: 'Imports B3 statements without sending the spreadsheet anywhere, and compares returns against the CDI and the Ibovespa.',
+        pt: 'Proventos já anunciados na B3, renda fixa atualizada pelas séries do Banco Central, importação dos extratos da B3 e comparação com o CDI e o Ibovespa.',
+        en: 'Dividends already announced on B3, fixed income updated from Central Bank series, B3 statement imports and comparison against the CDI and the Ibovespa.',
       },
       {
         pt: 'App Android com Capacitor, compilado, assinado e publicado pelo GitHub Actions.',
@@ -85,10 +89,10 @@ export const projects: Project[] = [
     ],
     images: [
       {
-        src: '/images/projects/genfin-resumo.webp',
+        src: '/images/projects/genfin-agente.webp',
         alt: {
-          pt: 'Tela de resumo do GenFin no tema escuro, com patrimônio, alocação por classe, evolução e maiores posições. Valores fictícios.',
-          en: 'GenFin summary screen in dark mode, with net worth, allocation by asset class, growth and top positions. Sample values.',
+          pt: 'Aba Agente do GenFin: resumo do dia da carteira, resposta sobre o que vender e um plano de aporte em cotas com botões Comprar. Valores fictícios.',
+          en: 'GenFin Agent tab: the portfolio’s daily summary, an answer about what to sell and an investment plan in shares with Buy buttons. Sample values.',
         },
         width: 1600,
         height: 1350,
