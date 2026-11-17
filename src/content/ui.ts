@@ -40,8 +40,8 @@ export const ui = {
     experience: { pt: 'Experiência', en: 'Experience' },
     skills: { pt: 'Habilidades', en: 'Skills' },
     skillsIntro: {
-      pt: 'Só o que já usei num projeto. Cada item leva ao lugar onde aparece.',
-      en: 'Only what I’ve used in a project. Each item links to where it shows up.',
+      pt: 'Só o que já usei num projeto ou no estágio. Cada item leva ao lugar onde aparece.',
+      en: 'Only what I’ve used in a project or at my internship. Each item links to where it shows up.',
     },
     education: { pt: 'Formação', en: 'Education' },
     contact: { pt: 'Contato', en: 'Contact' },
@@ -71,8 +71,8 @@ export const ui = {
   contact: {
     heading: { pt: 'Vamos conversar', en: 'Let’s talk' },
     body: {
-      pt: 'Estou aberto a conversar sobre estágios, projetos e ideias em software, IA e dados. O jeito mais rápido de falar comigo é pelo LinkedIn.',
-      en: 'I’m open to talking about internships, projects and ideas in software, AI and data. LinkedIn is the fastest way to reach me.',
+      pt: 'Estou aberto a conversar sobre projetos, oportunidades e ideias em software, IA e dados. Pode me chamar por e-mail ou pelo LinkedIn.',
+      en: 'I’m open to talking about projects, opportunities and ideas in software, AI and data. Reach me by email or on LinkedIn.',
     },
     email: { pt: 'E-mail', en: 'Email' },
   },
