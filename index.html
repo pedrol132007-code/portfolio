@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -10,7 +10,7 @@
     />
     <meta name="author" content="Pedro Lucas Romeiro dos Santos" />
     <meta name="color-scheme" content="dark light" />
-    <meta name="theme-color" content="#0B1020" />
+    <meta name="theme-color" content="#F5F0E6" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 
     <!-- Troque pedro-romeiro.vercel.app pelo domínio final (ver README, seção Deploy) -->
@@ -46,6 +46,8 @@
       try {
         var t = localStorage.getItem('theme');
         if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+        var p = localStorage.getItem('palette');
+        if (p) document.documentElement.dataset.palette = p;
       } catch (e) {}
     </script>
   </head>

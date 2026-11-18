@@ -29,8 +29,8 @@
 .name {
   margin-top: var(--space-3);
   font-size: clamp(3rem, 1.8rem + 5vw, 6rem);
-  font-weight: 700;
-  font-stretch: 78%;
+  font-weight: 500;
+  font-stretch: 100%;
   letter-spacing: -0.012em;
   line-height: 0.95;
   font-variation-settings: 'opsz' 96;

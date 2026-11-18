@@ -9,8 +9,8 @@
 
 .moreTitle {
   font-size: var(--fs-lg);
-  font-weight: 620;
-  font-stretch: 88%;
+  font-weight: 560;
+  font-stretch: 100%;
   padding-bottom: var(--space-4);
 }
 

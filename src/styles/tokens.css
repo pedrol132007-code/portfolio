@@ -32,7 +32,7 @@
   --fs-lg: 1.5625rem;
   --fs-xl: clamp(1.75rem, 1.4rem + 1.2vw, 2.25rem);
   --fs-2xl: clamp(2.25rem, 1.6rem + 2.6vw, 3.5rem);
-  --fs-display: clamp(5rem, 1rem + 17vw, 15rem);
+  --fs-display: clamp(3.75rem, 1rem + 9.5vw, 9.5rem);
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -58,38 +58,83 @@
   --dur: 280ms;
 }
 
-/* Escuro é o padrão */
+/*
+ * Paletas. Claro é o padrão: fundo areia, tudo em tons suaves.
+ * data-palette escolhe o acento (salvia, lavanda ou lilas); sem atributo vale a sálvia.
+ */
 :root,
-:root[data-theme='dark'] {
-  color-scheme: dark;
-  --bg: #0b1020;
-  --bg-raised: #10172b;
-  --surface: #141c33;
-  --line: #222c47;
-  --line-strong: #34405f;
-  --text: #e8ecf7;
-  --text-muted: #9aa3bf;
-  --text-faint: #717b99;
-  --accent: #9aa8ff;
-  --accent-strong: #c3cbff;
-  --accent-ink: #0b1020;
-  --accent-soft: rgb(154 168 255 / 0.1);
-  --shadow: 0 24px 60px -24px rgb(0 0 0 / 0.6);
-}
-
 :root[data-theme='light'] {
   color-scheme: light;
-  --bg: #f4f5fa;
-  --bg-raised: #ffffff;
-  --surface: #ffffff;
-  --line: #dce0ec;
-  --line-strong: #c1c7d9;
-  --text: #121831;
-  --text-muted: #4d5672;
-  --text-faint: #6b7390;
-  --accent: #4450cf;
-  --accent-strong: #3039ad;
+  --bg: #f5f0e6;
+  --bg-raised: #f9f5ec;
+  --surface: #fbf8f1;
+  --line: #e6dfd0;
+  --line-strong: #d3c9b5;
+  --text: #2b2f2a;
+  --text-muted: #5b6058;
+  --text-faint: #686d63;
+  --accent: #4f7253;
+  --accent-strong: #3d5a41;
   --accent-ink: #ffffff;
-  --accent-soft: rgb(68 80 207 / 0.08);
-  --shadow: 0 24px 60px -28px rgb(18 24 49 / 0.35);
+  --accent-soft: rgb(79 114 83 / 0.1);
+  --shadow: 0 24px 60px -30px rgb(60 52 36 / 0.28);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #1a1c18;
+  --bg-raised: #1f221d;
+  --surface: #252922;
+  --line: #33382f;
+  --line-strong: #464d41;
+  --text: #ece8de;
+  --text-muted: #b3b0a4;
+  --text-faint: #8f8d82;
+  --accent: #a9c4a5;
+  --accent-strong: #c8dcc4;
+  --accent-ink: #1a1c18;
+  --accent-soft: rgb(169 196 165 / 0.1);
+  --shadow: 0 24px 60px -24px rgb(0 0 0 / 0.55);
+}
+
+/* Areia com lavanda */
+:root[data-palette='lavanda'][data-theme='light'] {
+  --text: #2b2a30;
+  --text-muted: #5d5a63;
+  --text-faint: #6d6a73;
+  --accent: #67589a;
+  --accent-strong: #52457e;
+  --accent-soft: rgb(103 88 154 / 0.09);
+}
+
+/* Lilás inteiro */
+:root[data-palette='lilas'][data-theme='light'] {
+  --bg: #f3f0f7;
+  --bg-raised: #f7f4fa;
+  --surface: #faf8fc;
+  --line: #e3dcec;
+  --line-strong: #cdc3da;
+  --text: #2a2633;
+  --text-muted: #5c5668;
+  --text-faint: #6c667a;
+  --accent: #67589a;
+  --accent-strong: #52457e;
+  --accent-soft: rgb(103 88 154 / 0.09);
+  --shadow: 0 24px 60px -30px rgb(48 36 72 / 0.25);
+}
+
+:root[data-palette='lavanda'][data-theme='dark'],
+:root[data-palette='lilas'][data-theme='dark'] {
+  --bg: #1c1a20;
+  --bg-raised: #211f26;
+  --surface: #27242c;
+  --line: #36323d;
+  --line-strong: #4a4552;
+  --text: #ece8f0;
+  --text-muted: #b2adb9;
+  --text-faint: #8f8a97;
+  --accent: #bcb0e2;
+  --accent-strong: #d6cdf0;
+  --accent-ink: #1c1a20;
+  --accent-soft: rgb(188 176 226 / 0.1);
 }

@@ -4,11 +4,11 @@
 }
 
 .title {
-  font-size: clamp(3rem, 1.5rem + 7vw, 7.5rem);
-  font-weight: 720;
-  font-stretch: 75%;
+  font-size: clamp(2.75rem, 1.5rem + 5vw, 6rem);
+  font-weight: 480;
+  font-stretch: 100%;
   letter-spacing: -0.015em;
-  line-height: 0.92;
+  line-height: 1;
   font-variation-settings: 'opsz' 96;
 }
 
@@ -49,8 +49,8 @@
 .label {
   grid-area: label;
   font-size: var(--fs-lg);
-  font-weight: 640;
-  font-stretch: 85%;
+  font-weight: 560;
+  font-stretch: 100%;
   letter-spacing: -0.02em;
   line-height: 1.2;
 }

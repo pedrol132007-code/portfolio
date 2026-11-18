@@ -10,43 +10,35 @@
   padding-block: var(--space-7) var(--space-7);
 }
 
-/* O nome é o elemento marcante: a fonte variável "se constrói" ao carregar, de larga e fina para estreita e firme. */
+/* O nome em tom calmo: peso médio, largura normal, e o sobrenome na cor de destaque. */
 .name {
   display: flex;
   flex-direction: column;
   font-size: var(--fs-display);
-  line-height: 0.84;
-  font-weight: 720;
-  font-stretch: 75%;
-  letter-spacing: -0.012em;
+  line-height: 0.98;
+  font-weight: 460;
+  letter-spacing: -0.022em;
   font-variation-settings: 'opsz' 96;
 }
 
 .line {
   display: block;
-  animation: build 1300ms var(--ease-out) both;
+  animation: rise 1100ms var(--ease-out) both;
 }
 
 .lineTwo {
-  align-self: flex-end;
-  animation-delay: 140ms;
+  color: var(--accent);
+  animation-delay: 120ms;
 }
 
-@keyframes build {
+@keyframes rise {
   from {
-    font-stretch: 100%;
-    font-weight: 250;
-    letter-spacing: 0.01em;
     opacity: 0;
-  }
-  35% {
-    opacity: 1;
+    transform: translateY(0.12em);
   }
   to {
-    font-stretch: 75%;
-    font-weight: 720;
-    letter-spacing: -0.012em;
     opacity: 1;
+    transform: none;
   }
 }
 
@@ -124,10 +116,6 @@
   .inner {
     min-height: auto;
     padding-top: var(--space-8);
-  }
-  .lineTwo {
-    align-self: flex-start;
-    padding-left: 0.5em;
   }
   .now {
     margin-top: var(--space-7);

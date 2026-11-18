@@ -13,8 +13,8 @@
 
 .title {
   font-size: var(--fs-lg);
-  font-weight: 640;
-  font-stretch: 88%;
+  font-weight: 560;
+  font-stretch: 100%;
   letter-spacing: -0.02em;
 }
 

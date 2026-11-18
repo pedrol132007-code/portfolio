@@ -5,8 +5,8 @@
 
 .title {
   font-size: var(--fs-2xl);
-  font-weight: 680;
-  font-stretch: 82%;
+  font-weight: 520;
+  font-stretch: 100%;
   letter-spacing: -0.025em;
 }
 

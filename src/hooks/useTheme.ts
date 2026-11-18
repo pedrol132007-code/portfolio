@@ -3,17 +3,17 @@ import { storage } from '../lib/storage';
 
 export type Theme = 'dark' | 'light';
 
-/** Escuro por padrão. O index.html já aplica o tema salvo antes da primeira pintura. */
+/** Claro por padrão. O index.html já aplica o tema salvo antes da primeira pintura. */
 export function useTheme() {
   const [theme, setTheme] = useState<Theme>(() =>
-    document.documentElement.dataset.theme === 'light' ? 'light' : 'dark',
+    document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light',
   );
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
     document
       .querySelector('meta[name="theme-color"]')
-      ?.setAttribute('content', theme === 'dark' ? '#0B1020' : '#F4F5FA');
+      ?.setAttribute('content', getComputedStyle(document.documentElement).getPropertyValue('--bg').trim());
   }, [theme]);
 
   const toggle = useCallback(() => {

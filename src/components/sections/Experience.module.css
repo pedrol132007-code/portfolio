@@ -20,8 +20,8 @@
 
 .company {
   font-size: var(--fs-xl);
-  font-weight: 680;
-  font-stretch: 82%;
+  font-weight: 540;
+  font-stretch: 100%;
   letter-spacing: -0.025em;
   line-height: 1.1;
 }

@@ -29,8 +29,8 @@
 .name {
   grid-area: name;
   font-size: var(--fs-lg);
-  font-weight: 640;
-  font-stretch: 85%;
+  font-weight: 560;
+  font-stretch: 100%;
   letter-spacing: -0.02em;
   line-height: 1.15;
   transition: color var(--dur-fast) ease;
