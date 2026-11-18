@@ -72,6 +72,7 @@ export const skillGroups: SkillGroup[] = [
   {
     title: { pt: 'Business Intelligence', en: 'Business Intelligence' },
     skills: [
+      { name: { pt: 'Dashboards em portais', en: 'Portal dashboards' }, usedIn: ['benner'] },
       { name: 'DBeaver', usedIn: ['benner'] },
       { name: { pt: 'Coletores de dados', en: 'Data collectors' }, usedIn: ['benner'] },
       { name: { pt: 'Servidores', en: 'Servers' }, usedIn: ['benner'] },

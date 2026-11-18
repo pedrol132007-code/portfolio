@@ -66,8 +66,8 @@ export const experience: ExperienceItem[] = [
     role: { pt: 'Estagiário de Business Intelligence', en: 'Business Intelligence Intern' },
     period: { pt: 'ago. 2026 – atual', en: 'Aug 2026 – present' },
     summary: {
-      pt: 'Na equipe de BI, trabalho com os dados que chegam às análises: consultas SQL no DBeaver, coletores de dados, servidores e automações em PowerShell. O Claude Code faz parte do meu dia a dia para escrever, revisar e entender esse código mais rápido.',
-      en: 'On the BI team, I work with the data that feeds the analyses: SQL queries in DBeaver, data collectors, servers and PowerShell automation. Claude Code is part of my daily routine for writing, reviewing and understanding that code faster.',
+      pt: 'Na equipe de BI, construo dashboards em portais que reúnem as informações num só lugar, para que as pessoas encontrem o que precisam de forma rápida e clara, sem precisar garimpar dados. Por trás de cada painel tem todo o caminho da informação: consultas SQL no DBeaver, coletores que buscam os dados, servidores e automações em PowerShell. O Claude Code faz parte do meu dia a dia para escrever, revisar e entender esse código mais rápido.',
+      en: 'On the BI team, I build dashboards in portals that bring information together in one place, so people can find what they need quickly and clearly, without digging through data. Behind each dashboard is the whole path the information takes: SQL queries in DBeaver, collectors that gather the data, servers and PowerShell automation. Claude Code is part of my daily routine for writing, reviewing and understanding that code faster.',
     },
     tools: ['SQL', 'DBeaver', 'PowerShell', 'Claude Code'],
   },
