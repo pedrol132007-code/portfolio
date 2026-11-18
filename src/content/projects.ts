@@ -45,6 +45,17 @@ export const projects: Project[] = [
       { kind: 'repo', href: `${GH}/tododay` },
       { kind: 'live', href: 'https://tododay-nu.vercel.app/', note: { pt: 'acesso por convite', en: 'invite only' } },
     ],
+    images: [
+      {
+        src: '/images/projects/tododay-board.webp',
+        alt: {
+          pt: 'Board do ToDoDay com as colunas A fazer, Em andamento, Em revisão e Concluído, cards com etiquetas, prazos e responsáveis, e um limite de WIP estourado em Em revisão. Equipe e tarefas fictícias.',
+          en: 'ToDoDay board with To do, In progress, In review and Done columns, cards with labels, due dates and assignees, and a WIP limit exceeded in In review. Fictional team and tasks.',
+        },
+        width: 1600,
+        height: 1000,
+      },
+    ],
     visual: 'tododay-architecture',
   },
   {
