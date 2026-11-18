@@ -9,7 +9,6 @@ import { Projects } from './components/sections/Projects';
 import { Skills } from './components/sections/Skills';
 import { ui } from './content/ui';
 import { useLocale } from './hooks/useLocale';
-import { PalettePreview } from './components/ui/PalettePreview';
 
 export function App() {
   const { t } = useLocale();
@@ -29,7 +28,6 @@ export function App() {
         <Contact />
       </main>
       <Footer />
-      <PalettePreview />
     </>
   );
 }

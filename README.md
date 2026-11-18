@@ -1,6 +1,6 @@
 # Portfólio — Pedro Lucas Romeiro dos Santos
 
-Site pessoal feito com React, TypeScript e Vite. Bilíngue (PT/EN), tema escuro por padrão.
+Site pessoal feito com React, TypeScript e Vite. Bilíngue (PT/EN), tema claro por padrão (areia e sálvia), com opção de escuro.
 
 ## Rodar no seu computador
 
