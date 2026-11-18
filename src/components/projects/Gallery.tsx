@@ -8,7 +8,7 @@ export function Gallery({ images }: { images: ProjectImage[] }) {
   const [main, second] = images;
   return (
     <figure className={styles.gallery}>
-      <div className={styles.stage}>
+      <div className={`${styles.stage} ${second ? styles.withSecond : ''}`}>
         <img
           className={styles.main}
           src={main.src}
